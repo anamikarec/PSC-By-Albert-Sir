@@ -2,6 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 import { Navbar } from "../components/Navbar/Navbar";
 import { Layout } from "../components/Layout/Layout";
+import { AddTask } from "../pages/AddTask";
 interface Props {}
 
 export const AllRoutes = (props: Props) => {
@@ -12,7 +13,9 @@ export const AllRoutes = (props: Props) => {
         <div>Home</div>
       </Route>
       <Route exact path="/tasks">
-        <div>Tasks</div>
+        <div>
+          <AddTask />
+        </div>
       </Route>
       <Route exact path="/tasks/add">
         <div>Tasks Add</div>
