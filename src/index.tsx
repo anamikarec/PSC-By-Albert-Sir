@@ -1,0 +1,15 @@
+import { ChakraProvider } from "@chakra-ui/react";
+import { render } from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+render(
+  <ChakraProvider>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </ChakraProvider>,
+  rootElement
+);
